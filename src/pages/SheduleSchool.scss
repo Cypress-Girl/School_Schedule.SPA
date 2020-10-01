@@ -1,6 +1,24 @@
 @import "general";
 
-#rounded-div {
+#rounded-div1 {
   @extend %rounded-rect;
-  text-align: left;
+  height: auto;
+  padding-bottom: 10px;
+  text-align: center;
+  color: $contrast-color;
+}
+
+table {
+  border-spacing: 15px;
+  margin: 0 auto;
+  font-size: 18px;
+  border-collapse: collapse;
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid $contrast-color;
+  }
+
+  th, td {
+    padding: 10px;
+  }
 }

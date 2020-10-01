@@ -16,7 +16,7 @@ function School() {
     return (
         <div id="rounded-div">
             {weekday.map((day, index) => (
-                <Link to={`/school/${day.name}`} key={index} style={{display: "block"}} className="secondary-link">
+                <Link to={`/school/${index}`} key={index} style={{display: "block"}} className="secondary-link">
                     {day.title}
                 </Link>
             ))}

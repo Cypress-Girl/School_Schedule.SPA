@@ -1,38 +1,38 @@
 .link {
-    border: 2px solid white;
+  border: 2px solid white;
 }
 
 body {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .App {
-    margin: 0 40px;
+  margin: 0 40px;
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: max-content;
-    padding: 40px 40px;
-    margin-bottom: 40px;
-    border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: max-content;
+  padding: 40px 40px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid white;
 }
 
 .link {
-    padding: 5px 40px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: #1c70c4;
-    border-radius: 15px;
+  padding: 5px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #1c70c4;
+  border-radius: 15px;
 }
 
 .link:not(:last-child) {
-    margin-right: 55px;
+  margin-right: 55px;
 }
 
 /*# sourceMappingURL=App.css.map */
