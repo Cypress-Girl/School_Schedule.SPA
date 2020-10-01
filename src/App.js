@@ -3,9 +3,10 @@ import './App.css';
 import School from "./pages/School";
 import SummaryLesson from "./pages/Summary";
 import AddClass from "./pages/AddClass";
-import SheduleSchool from "./pages/SheduleSchool";
+import ScheduleSchool from "./pages/SheduleSchool";
+import ScheduleAddClass from "./pages/SheduleAddClass";
 
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Switch, NavLink} from "react-router-dom";
 
 
 function App() {
@@ -13,20 +14,22 @@ function App() {
         <Router>
             <div className="App">
                 <nav className="nav">
-                    <Link className="link" to="/school">Школа</Link>
-                    <Link className="link" to="/add">Допы</Link>
-                    <Link className="link" to="/summary">Сводная</Link>
+                    <NavLink className="link" to="/school">Школа</NavLink>
+                    <NavLink className="link" to="/add">Допы</NavLink>
+                    <NavLink className="link" to="/summary">Сводная</NavLink>
                 </nav>
                 <Switch>
                     <Route exact={true} path="/school">
                         <School/>
                     </Route>
 
-                    <Route path="/school/:weekday" children={(props) => <SheduleSchool {...props}/>}/>
+                    <Route path="/school/:weekday" children={(props) => <ScheduleSchool {...props}/>}/>
 
-                    <Route path="/add">
+                    <Route exact={true} path="/add">
                         <AddClass/>
                     </Route>
+
+                    <Route path="/add/:id/" children={(props) => <ScheduleAddClass {...props}/>}/>
 
                     <Route path="/summary">
                         <SummaryLesson/>

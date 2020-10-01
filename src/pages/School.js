@@ -7,16 +7,14 @@ const weekday = [
     {name: "tuesday", title: "ВТ"},
     {name: "wednesday", title: "СР"},
     {name: "thursday", title: "ЧТ"},
-    {name: "friday", title: "ПТ"},
-    // {name: "saturday", title: "СБ"},
-    // {name: "sunday", title: "ВС"}
+    {name: "friday", title: "ПТ"}
 ]
 
 function School() {
     return (
         <div id="rounded-div">
             {weekday.map((day, index) => (
-                <Link to={`/school/${index}`} key={index} style={{display: "block"}} className="secondary-link">
+                <Link to={`/school/${index}`} key={index} className="secondary-link">
                     {day.title}
                 </Link>
             ))}

@@ -9,9 +9,12 @@ $offset: 40px;
 }
 
 %rounded-rect {
-  width: 650px;
-  height: 300px;
   @extend %border-white;
   background-color: $dark-color;
   border-radius: 20px;
+}
+
+%div-shedule {
+  width: 650px;
+  height: 300px;
 }

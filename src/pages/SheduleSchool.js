@@ -43,18 +43,22 @@ const nameOfDays = ["ПОНЕДЕЛЬНИК", "ВТОРНИК", "СРЕДУ", "�
 function LessonTable(props) {
     return (
         <table>
-            <tr>
-                <th>№</th>
-                <th>Время</th>
-                <th>Предмет</th>
-            </tr>
-            {shedule[props.weekday].subjects.map((subject, index) => (
+            <thead>
                 <tr>
-                    <td>{index + shedule[props.weekday].first}</td>
-                    <td>{lessonTime[index + shedule[props.weekday].first]}</td>
-                    <td>{subject}</td>
+                    <th>№</th>
+                    <th>Время</th>
+                    <th>Предмет</th>
                 </tr>
-            ))}
+            </thead>
+            <tbody>
+                {shedule[props.weekday].subjects.map((subject, index) => (
+                    <tr key={index}>
+                        <td>{index + shedule[props.weekday].first}</td>
+                        <td>{lessonTime[index + shedule[props.weekday].first]}</td>
+                        <td>{subject}</td>
+                    </tr>
+                ))}
+            </tbody>
         </table>
     )
 }
@@ -64,10 +68,13 @@ function SheduleSchool(props) {
     let countLessons = shedule[weekday].subjects.length;
 
     return (
-        <div id="rounded-div1">
-            <h3>РАСПИСАНИЕ НА {nameOfDays[weekday]}</h3>
-            <h4>{countLessons} уроков</h4>
-            <LessonTable weekday={weekday} />
+        <div id="shedule-main-div">
+            <div id="rounded-div1">
+                <h3>РАСПИСАНИЕ НА {nameOfDays[weekday]}</h3>
+                <h4>{countLessons} уроков</h4>
+                <LessonTable weekday={weekday} />
+            </div>
+            <button onClick={props.history.goBack} >Назад</button>
         </div>
     )
 }

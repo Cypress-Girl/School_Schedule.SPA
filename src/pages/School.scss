@@ -5,10 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @extend %div-shedule;
   @extend %rounded-rect;
+  color: white;
 }
 
 .secondary-link {
+  display: block;
   text-decoration: none;
   font-size: 20px;
   color: white;
