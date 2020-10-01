@@ -1,0 +1,17 @@
+$light-color: lightblue;
+$dark-color: #1c70c4;
+$contrast-color: white;
+$link-hover-color: #ff8282;
+$offset: 40px;
+
+%border-white {
+  border: 2px solid white;
+}
+
+%rounded-rect {
+  width: 680px;
+  height: 300px;
+  @extend %border-white;
+  background-color: $dark-color;
+  border-radius: 20px;
+}

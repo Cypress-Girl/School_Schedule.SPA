@@ -1,0 +1,35 @@
+@import "./pages/general";
+
+body {
+  background-color: $light-color;
+}
+
+.App {
+  margin: 0 $offset;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: max-content;
+  padding: $offset $offset;
+  margin-bottom: $offset;
+  border-bottom: 2px solid $contrast-color;
+}
+
+.link {
+  @extend %border-white;
+  padding: 5px $offset;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: $contrast-color;
+  background-color: $dark-color;
+  border-radius: 15px;
+}
+
+.link:not(:last-child) {
+  margin-right: 55px;
+}

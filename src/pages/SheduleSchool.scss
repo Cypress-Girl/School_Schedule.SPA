@@ -1,0 +1,6 @@
+@import "general";
+
+#rounded-div {
+  @extend %rounded-rect;
+  text-align: left;
+}
