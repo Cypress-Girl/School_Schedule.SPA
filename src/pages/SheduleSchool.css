@@ -1,8 +1,8 @@
-#shedule-main-div button, #rounded-div1 {
+#schedule-main-div button, #rounded-div1 {
   border: 2px solid white;
 }
 
-#shedule-main-div button, #rounded-div1 {
+#schedule-main-div button, #rounded-div1 {
   background-color: #1c70c4;
   border-radius: 20px;
 }
@@ -20,23 +20,23 @@
 }
 
 table {
-  border-spacing: 15px;
   margin: 0 auto;
   font-size: 18px;
   border-collapse: collapse;
+  text-align: center;
 }
 table tr:not(:last-child) {
   border-bottom: 1px solid white;
 }
 table th, table td {
-  padding: 10px;
+  padding: 10px 20px;
 }
 
-#shedule-main-div {
+#schedule-main-div {
   height: auto;
   width: max-content;
 }
-#shedule-main-div button {
+#schedule-main-div button {
   padding: 10px 30px;
   margin: 10px 0 0;
   float: right;

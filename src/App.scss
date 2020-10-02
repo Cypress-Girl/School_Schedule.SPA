@@ -5,7 +5,8 @@ body {
 }
 
 .App {
-  margin: 0 $offset;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .nav {

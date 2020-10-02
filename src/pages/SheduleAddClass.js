@@ -1,19 +1,10 @@
 import React from 'react'
-
-const scheduleArt = [
-    {day: "СБ", time: "15:00 - 18:00"},
-    {day: "ВС", time: "10:00 - 13:00"}
-]
-
-const scheduleEnglish = [
-    {day: "СР", time: "20:00 - 21:00"},
-    {day: "ПТ", time: "20:00 - 21:00"}
-]
+import {scheduleArt, scheduleEnglish, weekday} from "./data";
 
 function TableData(props) {
     return (
         <tr key={props.index}>
-            <td>{props.day}</td>
+            <td style={{fontWeight: "bold"}}>{props.day}</td>
             <td>{props.time}</td>
         </tr>
     )
@@ -23,12 +14,12 @@ function LessonTable(props) {
     let scheduleRows;
     let title;
 
-    if (Number(props.id) == 0) {
+    if (Number(props.id) === 0) {
         title = "РАСПИСАНИЕ ПО АНГЛИЙКОМУ ЯЗЫКУ";
         scheduleRows = (
             <React.Fragment>
                 {scheduleEnglish.map((item, index) => (
-                    <TableData day={item.day} time={item.time} index={index} key={index}/>
+                    <TableData day={weekday[item.day].title} time={item.time} index={index} key={index}/>
                 ))}
             </React.Fragment>
         )
@@ -37,7 +28,7 @@ function LessonTable(props) {
         scheduleRows = (
             <React.Fragment>
                 {scheduleArt.map((item, index) => (
-                    <TableData day={item.day} time={item.time} index={index} key={index}/>
+                    <TableData day={weekday[item.day].title} time={item.time} index={index} key={index}/>
                 ))}
             </React.Fragment>
         )
@@ -62,7 +53,7 @@ function LessonTable(props) {
 
 function ScheduleAddClass(props) {
     return (
-        <div id="shedule-main-div">
+        <div id="schedule-main-div">
             <div id="rounded-div">
                 <LessonTable id={props.match.params.id}/>
             </div>

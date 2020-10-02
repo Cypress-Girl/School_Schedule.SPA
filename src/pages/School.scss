@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @extend %div-shedule;
+  @extend %div-schedule;
   @extend %rounded-rect;
   color: white;
 }

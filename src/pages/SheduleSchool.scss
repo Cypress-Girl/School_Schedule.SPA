@@ -1,7 +1,7 @@
 @import "general";
 
 #rounded-div1 {
-  @extend %div-shedule;
+  @extend %div-schedule;
   @extend %rounded-rect;
   height: auto;
   padding-bottom: 10px;
@@ -10,21 +10,21 @@
 }
 
 table {
-  border-spacing: 15px;
   margin: 0 auto;
   font-size: 18px;
   border-collapse: collapse;
+  text-align: center;
 
   tr:not(:last-child) {
     border-bottom: 1px solid $contrast-color;
   }
 
   th, td {
-    padding: 10px;
+    padding: 10px 20px;
   }
 }
 
-#shedule-main-div {
+#schedule-main-div {
   height: auto;
   width: max-content;
 

@@ -6,7 +6,7 @@ import AddClass from "./pages/AddClass";
 import ScheduleSchool from "./pages/SheduleSchool";
 import ScheduleAddClass from "./pages/SheduleAddClass";
 
-import {BrowserRouter as Router, Link, Route, Switch, NavLink} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, NavLink} from "react-router-dom";
 
 
 function App() {
@@ -29,11 +29,9 @@ function App() {
                         <AddClass/>
                     </Route>
 
-                    <Route path="/add/:id/" children={(props) => <ScheduleAddClass {...props}/>}/>
+                    <Route path="/add/:id" children={(props) => <ScheduleAddClass {...props}/>}/>
 
-                    <Route path="/summary">
-                        <SummaryLesson/>
-                    </Route>
+                    <Route path="/summary" children={(props) => <SummaryLesson {...props}/>}/>
                 </Switch>
             </div>
         </Router>
