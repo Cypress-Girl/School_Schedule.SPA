@@ -1,6 +1,6 @@
 import React from "react";
 import "./SheduleSchool.css";
-import {schedule, lessonTime} from "./data";
+import {schedule, lessonTime} from "../data/data";
 
 const nameOfDays = ["ПОНЕДЕЛЬНИК", "ВТОРНИК", "СРЕДУ", "ЧЕТВЕРГ", "ПЯТНИЦУ"];
 

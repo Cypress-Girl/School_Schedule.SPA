@@ -3,8 +3,8 @@ import './App.css';
 import School from "./pages/School";
 import SummaryLesson from "./pages/Summary";
 import AddClass from "./pages/AddClass";
-import ScheduleSchool from "./pages/SheduleSchool";
-import ScheduleAddClass from "./pages/SheduleAddClass";
+import ScheduleSchool from "./components/SheduleSchool";
+import ScheduleAddClass from "./components/SheduleAddClass";
 
 import {BrowserRouter as Router, Route, Switch, NavLink} from "react-router-dom";
 

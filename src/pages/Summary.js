@@ -1,5 +1,5 @@
 import React from 'react'
-import {lessonTime, schedule, scheduleArt, scheduleEnglish, weekday} from "./data";
+import {lessonTime, schedule, scheduleArt, scheduleEnglish, weekday} from "../data/data";
 
 function SchoolRow(props) {
     let day = props.day;

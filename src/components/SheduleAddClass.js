@@ -1,5 +1,5 @@
 import React from 'react'
-import {scheduleArt, scheduleEnglish, weekday} from "./data";
+import {scheduleArt, scheduleEnglish, weekday} from "../data/data";
 
 function TableData(props) {
     return (

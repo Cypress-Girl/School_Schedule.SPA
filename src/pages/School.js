@@ -1,7 +1,7 @@
 import React from 'react'
 import "./School.css";
 import {Link} from "react-router-dom";
-import {weekday} from "./data";
+import {weekday} from "../data/data";
 
 function School() {
     let tag;
