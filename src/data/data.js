@@ -32,6 +32,9 @@ const FRI_DAY = 4;
 const SUT_DAY = 5;
 const SUN_DAY = 6;
 
+const TYPE_SCHEDULE_SCHOOl = 0;
+const TYPE_SCHEDULE_ADD_CLASS = 1;
+
 const lessonTime = [
     "13:10 - 13:50",
     "14:00 - 14:40",
@@ -60,4 +63,4 @@ const scheduleEnglish = [
     {day: FRI_DAY, time: "20:00 - 21:00"}
 ]
 
-export {weekday, lessonTime, schedule, scheduleArt, scheduleEnglish};
+export {weekday, lessonTime, schedule, scheduleArt, scheduleEnglish, TYPE_SCHEDULE_ADD_CLASS, TYPE_SCHEDULE_SCHOOl};

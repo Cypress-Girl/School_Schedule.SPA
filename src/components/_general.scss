@@ -16,5 +16,7 @@ $offset: 40px;
 
 %div-schedule {
   width: 650px;
-  height: 300px;
+  height: auto;
+  min-height: 300px;
+  padding-bottom: 20px;
 }

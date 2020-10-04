@@ -5,7 +5,7 @@ import SummaryLesson from "./pages/Summary";
 import AddClass from "./pages/AddClass";
 import ScheduleSchool from "./components/SheduleSchool";
 import ScheduleAddClass from "./components/SheduleAddClass";
-
+// import "../components/SheduleSchool.css";
 import {BrowserRouter as Router, Route, Switch, NavLink} from "react-router-dom";
 
 

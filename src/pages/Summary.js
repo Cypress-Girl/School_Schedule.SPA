@@ -88,7 +88,7 @@ function LessonTable() {
 function SummaryLesson(props) {
     return (
         <div id="schedule-main-div">
-            <div id="rounded-div1">
+            <div id="rounded-div">
                 <h3>РАСПИСАНИЕ НА НЕДЕЛЮ</h3>
                 <LessonTable />
             </div>

@@ -21,3 +21,32 @@
 .secondary-link:hover {
   color: $link-hover-color;
 }
+
+table {
+  margin: 0 auto;
+  font-size: 18px;
+  border-collapse: collapse;
+  text-align: center;
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid $contrast-color;
+  }
+
+  th, td {
+    padding: 10px 20px;
+  }
+}
+
+#schedule-main-div {
+  height: auto;
+  width: max-content;
+
+  button {
+    padding: 10px 30px;
+    margin: 10px 0 0;
+    float: right;
+    @extend %rounded-rect;
+    font-size: medium;
+    color: $contrast-color;
+  }
+}
