@@ -13,7 +13,7 @@ function ScheduleDiv(props) {
     else if (props.typeSchedule === TYPE_SCHEDULE_SCHOOl)
         componentTable = <LessonTableSchool weekday={props.match.params.weekday}/>;
     else if (props.typeSchedule === TYPE_SCHEDULE_SUMMARY)
-        componentTable = <LessonTableSummary />;
+        componentTable = <LessonTableSummary push={props.history.push}/>;
 
     return (
         <div id="schedule-main-div">

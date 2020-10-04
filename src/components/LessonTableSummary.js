@@ -4,7 +4,7 @@ import ArtRow from "./ArtRow";
 import EnglishRow from "./EnglishRow";
 import SchoolRow from "./SchoolRow";
 
-function LessonTableSummary() {
+function LessonTableSummary(props) {
     return (
         <React.Fragment>
             <h3>РАСПИСАНИЕ НА НЕДЕЛЮ</h3>
@@ -21,7 +21,7 @@ function LessonTableSummary() {
                 {weekday.map((day, index) => (
                     <tr key={index}>
                         <td style={{fontWeight: "bold"}}>{day.title}</td>
-                        <SchoolRow day={index}/>
+                        <SchoolRow day={index} {...props}/>
                         <EnglishRow day={index}/>
                         <ArtRow day={index}/>
                     </tr>
