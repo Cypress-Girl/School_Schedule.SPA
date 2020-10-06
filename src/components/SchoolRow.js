@@ -19,19 +19,14 @@ function SchoolRow(props) {
         text = durationLesson;
 
         componentTimeInSchool =
-            <td style={{cursor: "pointer"}} onClick={() => props.push(`/school/${day}`)}>{text}</td>;
+            <td  style={props.style} className="tdClickable" onClick={() => props.push(`/school/${day}`)}>{text}</td>;
 
     } else {
         text = "-";
         componentTimeInSchool = <td>{text}</td>;
     }
 
-    //return
-        // <td style={{cursor: "pointer"}} onClick={() => props.push(`/school/${day}`)}>
-        //     {text}
-        // </td>
-    return    componentTimeInSchool
-
+    return  componentTimeInSchool;
 }
 
 export default SchoolRow;

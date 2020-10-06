@@ -13,7 +13,7 @@
 .secondary-link {
   display: block;
   text-decoration: none;
-  font-size: 20px;
+  font-size: $font-size-link;
   color: white;
   margin-bottom: 10px;
 }
@@ -24,7 +24,7 @@
 
 table {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: $font-size-table;
   border-collapse: collapse;
   text-align: center;
 
@@ -35,6 +35,16 @@ table {
   th, td {
     padding: 10px 20px;
   }
+}
+
+.tdClickable {
+  cursor: pointer;
+}
+
+.tdClickable:hover {
+  color: $link-hover-color;
+  font-weight: bold;
+  padding: 0 0;
 }
 
 #schedule-main-div {

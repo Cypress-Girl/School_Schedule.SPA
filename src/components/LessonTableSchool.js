@@ -9,7 +9,7 @@ function LessonTableSchool(props) {
     return (
         <React.Fragment>
             <h3>РАСПИСАНИЕ НА {nameOfDays[props.weekday]}</h3>
-            <h4>{countLessons} уроков</h4>
+            <h4 style={{marginTop: 0}}>{countLessons} уроков</h4>
 
             <table>
                 <thead>

@@ -47,6 +47,16 @@ table th, table td {
   padding: 10px 20px;
 }
 
+.tdClickable {
+  cursor: pointer;
+}
+
+.tdClickable:hover {
+  color: #ff8282;
+  font-weight: bold;
+  padding: 0 0;
+}
+
 #schedule-main-div {
   height: auto;
   width: max-content;
